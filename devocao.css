@@ -1,0 +1,140 @@
+:root {
+    --corPrimaria: #4a4857;
+    --corSecundaria: #859987;
+    --corTerciaria: #86c28b;
+    --corQuaternaria: #77b885;
+    --corQuintenaria: #6da67a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Afacad Flux", serif;
+}
+
+body {
+    background-color: var(--corPrimaria);
+    color: white;
+    width: 100%;
+    height: 90vh;
+    background-color: var(--corSecundaria);
+}
+
+#data {
+    display: flex;
+    
+    padding: 5% 0%;
+}
+
+#dataMes {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#imagemFundo {
+    background-color: var(--corSecundaria);
+    padding: 5%;
+}
+
+
+#versoTexto {
+    padding: 5%;
+    width: 100%;
+    height: 70%;
+    overflow-y: auto;
+    background-color: var(--corPrimaria);
+    font-size: 15px;
+}
+
+#versoTexto::-webkit-scrollbar {
+    background-color: var(--corPrimaria);
+    width: 10px;
+    height: 2px;
+}
+
+#versoTexto::-webkit-scrollbar-thumb {
+    background-color: var(--corSecundaria);
+    border-radius: 30px;
+    height: 2px;
+}
+
+#titulo {
+    font-size: 20px;
+}
+
+#texto {
+    font-size: 20px;
+}
+
+#botoes {
+    background-color: var(--corSecundaria);
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#botoes button {
+    border: none;
+    margin: 10px 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: var(--corPrimaria);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+#menuBotao {
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 90%;
+    top: 7%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--corPrimaria);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu {
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 75%;
+    top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(87, 87, 87);
+    width: 40%;
+    height: 20%;
+    padding: 20px;
+}
+
+#menu #botoes {
+    background-color: transparent;
+    top: 80%;
+}
+
+#menu #botoes button {
+    width: 30px;
+    height: 30px;
+}
